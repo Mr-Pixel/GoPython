@@ -7,35 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B831840221CD070F00B2D370 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B831840121CD070F00B2D370 /* AppDelegate.m */; };
-		B831840521CD070F00B2D370 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B831840421CD070F00B2D370 /* ViewController.m */; };
-		B831840821CD070F00B2D370 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B831840621CD070F00B2D370 /* Main.storyboard */; };
-		B831840A21CD071100B2D370 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B831840921CD071100B2D370 /* Assets.xcassets */; };
-		B831840D21CD071100B2D370 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B831840B21CD071100B2D370 /* LaunchScreen.storyboard */; };
-		B831841021CD071100B2D370 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B831840F21CD071100B2D370 /* main.m */; };
-		B831841B21CD075000B2D370 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = B831841721CD075000B2D370 /* GCDAsyncUdpSocket.m */; };
-		B831841C21CD075000B2D370 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = B831841821CD075000B2D370 /* GCDAsyncSocket.m */; };
+		B8CD571A21DE271D0031B426 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B8CD571921DE271D0031B426 /* AppDelegate.m */; };
+		B8CD571D21DE271D0031B426 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8CD571C21DE271D0031B426 /* ViewController.m */; };
+		B8CD572021DE271D0031B426 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8CD571E21DE271D0031B426 /* Main.storyboard */; };
+		B8CD572221DE271F0031B426 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8CD572121DE271F0031B426 /* Assets.xcassets */; };
+		B8CD572521DE271F0031B426 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8CD572321DE271F0031B426 /* LaunchScreen.storyboard */; };
+		B8CD572821DE271F0031B426 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B8CD572721DE271F0031B426 /* main.m */; };
+		B8CD573321DE27400031B426 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = B8CD572F21DE273F0031B426 /* GCDAsyncUdpSocket.m */; };
+		B8CD573421DE27400031B426 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = B8CD573021DE273F0031B426 /* GCDAsyncSocket.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B83183FD21CD070F00B2D370 /* AFClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AFClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B831840021CD070F00B2D370 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		B831840121CD070F00B2D370 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B831840321CD070F00B2D370 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B831840421CD070F00B2D370 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		B831840721CD070F00B2D370 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B831840921CD071100B2D370 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B831840C21CD071100B2D370 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		B831840E21CD071100B2D370 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B831840F21CD071100B2D370 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B831841721CD075000B2D370 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
-		B831841821CD075000B2D370 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
-		B831841921CD075000B2D370 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
-		B831841A21CD075000B2D370 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		B8CD571521DE271D0031B426 /* AKClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AKClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8CD571821DE271D0031B426 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B8CD571921DE271D0031B426 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B8CD571B21DE271D0031B426 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B8CD571C21DE271D0031B426 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B8CD571F21DE271D0031B426 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B8CD572121DE271F0031B426 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B8CD572421DE271F0031B426 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B8CD572621DE271F0031B426 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8CD572721DE271F0031B426 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B8CD572F21DE273F0031B426 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		B8CD573021DE273F0031B426 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		B8CD573121DE273F0031B426 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		B8CD573221DE273F0031B426 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B83183FA21CD070F00B2D370 /* Frameworks */ = {
+		B8CD571221DE271D0031B426 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,85 +45,85 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B83183F421CD070F00B2D370 = {
+		B8CD570C21DE271D0031B426 = {
 			isa = PBXGroup;
 			children = (
-				B83183FF21CD070F00B2D370 /* AFClient */,
-				B83183FE21CD070F00B2D370 /* Products */,
+				B8CD572E21DE273F0031B426 /* AsyncSocket */,
+				B8CD571721DE271D0031B426 /* AKClient */,
+				B8CD571621DE271D0031B426 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		B83183FE21CD070F00B2D370 /* Products */ = {
+		B8CD571621DE271D0031B426 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B83183FD21CD070F00B2D370 /* AFClient.app */,
+				B8CD571521DE271D0031B426 /* AKClient.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B83183FF21CD070F00B2D370 /* AFClient */ = {
+		B8CD571721DE271D0031B426 /* AKClient */ = {
 			isa = PBXGroup;
 			children = (
-				B831841621CD075000B2D370 /* AsyncSocket */,
-				B831840021CD070F00B2D370 /* AppDelegate.h */,
-				B831840121CD070F00B2D370 /* AppDelegate.m */,
-				B831840321CD070F00B2D370 /* ViewController.h */,
-				B831840421CD070F00B2D370 /* ViewController.m */,
-				B831840621CD070F00B2D370 /* Main.storyboard */,
-				B831840921CD071100B2D370 /* Assets.xcassets */,
-				B831840B21CD071100B2D370 /* LaunchScreen.storyboard */,
-				B831840E21CD071100B2D370 /* Info.plist */,
-				B831840F21CD071100B2D370 /* main.m */,
+				B8CD571821DE271D0031B426 /* AppDelegate.h */,
+				B8CD571921DE271D0031B426 /* AppDelegate.m */,
+				B8CD571B21DE271D0031B426 /* ViewController.h */,
+				B8CD571C21DE271D0031B426 /* ViewController.m */,
+				B8CD571E21DE271D0031B426 /* Main.storyboard */,
+				B8CD572121DE271F0031B426 /* Assets.xcassets */,
+				B8CD572321DE271F0031B426 /* LaunchScreen.storyboard */,
+				B8CD572621DE271F0031B426 /* Info.plist */,
+				B8CD572721DE271F0031B426 /* main.m */,
 			);
-			path = AFClient;
+			path = AKClient;
 			sourceTree = "<group>";
 		};
-		B831841621CD075000B2D370 /* AsyncSocket */ = {
+		B8CD572E21DE273F0031B426 /* AsyncSocket */ = {
 			isa = PBXGroup;
 			children = (
-				B831841721CD075000B2D370 /* GCDAsyncUdpSocket.m */,
-				B831841821CD075000B2D370 /* GCDAsyncSocket.m */,
-				B831841921CD075000B2D370 /* GCDAsyncUdpSocket.h */,
-				B831841A21CD075000B2D370 /* GCDAsyncSocket.h */,
+				B8CD572F21DE273F0031B426 /* GCDAsyncUdpSocket.m */,
+				B8CD573021DE273F0031B426 /* GCDAsyncSocket.m */,
+				B8CD573121DE273F0031B426 /* GCDAsyncUdpSocket.h */,
+				B8CD573221DE273F0031B426 /* GCDAsyncSocket.h */,
 			);
 			path = AsyncSocket;
-			sourceTree = SOURCE_ROOT;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B83183FC21CD070F00B2D370 /* AFClient */ = {
+		B8CD571421DE271D0031B426 /* AKClient */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B831841321CD071100B2D370 /* Build configuration list for PBXNativeTarget "AFClient" */;
+			buildConfigurationList = B8CD572B21DE271F0031B426 /* Build configuration list for PBXNativeTarget "AKClient" */;
 			buildPhases = (
-				B83183F921CD070F00B2D370 /* Sources */,
-				B83183FA21CD070F00B2D370 /* Frameworks */,
-				B83183FB21CD070F00B2D370 /* Resources */,
+				B8CD571121DE271D0031B426 /* Sources */,
+				B8CD571221DE271D0031B426 /* Frameworks */,
+				B8CD571321DE271D0031B426 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = AFClient;
-			productName = AFClient;
-			productReference = B83183FD21CD070F00B2D370 /* AFClient.app */;
+			name = AKClient;
+			productName = AKClient;
+			productReference = B8CD571521DE271D0031B426 /* AKClient.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		B83183F521CD070F00B2D370 /* Project object */ = {
+		B8CD570D21DE271D0031B426 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "zqq张庆庆";
 				TargetAttributes = {
-					B83183FC21CD070F00B2D370 = {
+					B8CD571421DE271D0031B426 = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
 			};
-			buildConfigurationList = B83183F821CD070F00B2D370 /* Build configuration list for PBXProject "AFClient" */;
+			buildConfigurationList = B8CD571021DE271D0031B426 /* Build configuration list for PBXProject "AKClient" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -131,57 +131,57 @@
 				en,
 				Base,
 			);
-			mainGroup = B83183F421CD070F00B2D370;
-			productRefGroup = B83183FE21CD070F00B2D370 /* Products */;
+			mainGroup = B8CD570C21DE271D0031B426;
+			productRefGroup = B8CD571621DE271D0031B426 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B83183FC21CD070F00B2D370 /* AFClient */,
+				B8CD571421DE271D0031B426 /* AKClient */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B83183FB21CD070F00B2D370 /* Resources */ = {
+		B8CD571321DE271D0031B426 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B831840D21CD071100B2D370 /* LaunchScreen.storyboard in Resources */,
-				B831840A21CD071100B2D370 /* Assets.xcassets in Resources */,
-				B831840821CD070F00B2D370 /* Main.storyboard in Resources */,
+				B8CD572521DE271F0031B426 /* LaunchScreen.storyboard in Resources */,
+				B8CD572221DE271F0031B426 /* Assets.xcassets in Resources */,
+				B8CD572021DE271D0031B426 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B83183F921CD070F00B2D370 /* Sources */ = {
+		B8CD571121DE271D0031B426 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B831841B21CD075000B2D370 /* GCDAsyncUdpSocket.m in Sources */,
-				B831841C21CD075000B2D370 /* GCDAsyncSocket.m in Sources */,
-				B831840521CD070F00B2D370 /* ViewController.m in Sources */,
-				B831841021CD071100B2D370 /* main.m in Sources */,
-				B831840221CD070F00B2D370 /* AppDelegate.m in Sources */,
+				B8CD573321DE27400031B426 /* GCDAsyncUdpSocket.m in Sources */,
+				B8CD573421DE27400031B426 /* GCDAsyncSocket.m in Sources */,
+				B8CD571D21DE271D0031B426 /* ViewController.m in Sources */,
+				B8CD572821DE271F0031B426 /* main.m in Sources */,
+				B8CD571A21DE271D0031B426 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B831840621CD070F00B2D370 /* Main.storyboard */ = {
+		B8CD571E21DE271D0031B426 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B831840721CD070F00B2D370 /* Base */,
+				B8CD571F21DE271D0031B426 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		B831840B21CD071100B2D370 /* LaunchScreen.storyboard */ = {
+		B8CD572321DE271F0031B426 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B831840C21CD071100B2D370 /* Base */,
+				B8CD572421DE271F0031B426 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -189,7 +189,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		B831841121CD071100B2D370 /* Debug */ = {
+		B8CD572921DE271F0031B426 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -248,7 +248,7 @@
 			};
 			name = Debug;
 		};
-		B831841221CD071100B2D370 /* Release */ = {
+		B8CD572A21DE271F0031B426 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -301,37 +301,35 @@
 			};
 			name = Release;
 		};
-		B831841421CD071100B2D370 /* Debug */ = {
+		B8CD572C21DE271F0031B426 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S9TNAT69D4;
-				INFOPLIST_FILE = AFClient/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				INFOPLIST_FILE = AKClient/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.qing.AFClient;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qing.AKClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		B831841521CD071100B2D370 /* Release */ = {
+		B8CD572D21DE271F0031B426 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S9TNAT69D4;
-				INFOPLIST_FILE = AFClient/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				INFOPLIST_FILE = AKClient/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.qing.AFClient;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qing.AKClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -340,25 +338,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B83183F821CD070F00B2D370 /* Build configuration list for PBXProject "AFClient" */ = {
+		B8CD571021DE271D0031B426 /* Build configuration list for PBXProject "AKClient" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B831841121CD071100B2D370 /* Debug */,
-				B831841221CD071100B2D370 /* Release */,
+				B8CD572921DE271F0031B426 /* Debug */,
+				B8CD572A21DE271F0031B426 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B831841321CD071100B2D370 /* Build configuration list for PBXNativeTarget "AFClient" */ = {
+		B8CD572B21DE271F0031B426 /* Build configuration list for PBXNativeTarget "AKClient" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B831841421CD071100B2D370 /* Debug */,
-				B831841521CD071100B2D370 /* Release */,
+				B8CD572C21DE271F0031B426 /* Debug */,
+				B8CD572D21DE271F0031B426 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = B83183F521CD070F00B2D370 /* Project object */;
+	rootObject = B8CD570D21DE271D0031B426 /* Project object */;
 }

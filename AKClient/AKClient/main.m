@@ -1,9 +1,9 @@
 //
 //  main.m
-//  AFClient
+//  AKClient
 //
-//  Created by zqq张庆庆 on 2018/12/21.
-//  Copyright © 2018 zqq张庆庆. All rights reserved.
+//  Created by zqq张庆庆 on 2019/1/3.
+//  Copyright © 2019 zqq张庆庆. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

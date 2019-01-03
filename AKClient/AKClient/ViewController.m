@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "GCDAsyncSocket.h"
 
-@interface ViewController ()
+@interface ViewController ()<GCDAsyncSocketDelegate>
 @property (strong,nonatomic) GCDAsyncSocket *socket;
 @end
 
@@ -17,9 +17,39 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+    [self initView];
+}
+
+- (void)initView{
+    UIButton *connectBtn = [[UIButton alloc] initWithFrame:CGRectMake(20, 50, 100, 40)];
+    [connectBtn setTitle:@"Connect" forState:UIControlStateNormal];
+    [connectBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    connectBtn.layer.borderWidth = 1;
+    connectBtn.layer.borderColor = [UIColor blackColor].CGColor;
+    connectBtn.layer.cornerRadius = 5;
+    [connectBtn addTarget:self action:@selector(clickToConnect) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:connectBtn];
+    
+    UIButton *sendBtn = [[UIButton alloc] initWithFrame:CGRectMake(CGRectGetMaxX(connectBtn.frame)+20, 50, 100, 40)];
+    [sendBtn setTitle:@"Send" forState:UIControlStateNormal];
+    [sendBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    sendBtn.layer.borderWidth = 1;
+    sendBtn.layer.borderColor = [UIColor blackColor].CGColor;
+    sendBtn.layer.cornerRadius = 5;
+    [sendBtn addTarget:self action:@selector(clickToSendText) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:sendBtn];
+}
+
+- (void)clickToConnect{
     [self connectToServer];
 }
+
+- (void)clickToSendText{
+    [_socket writeData:[@"ssss" dataUsingEncoding:NSUTF8StringEncoding] withTimeout:0 tag:0];
+}
+
+#pragma socket
 
 - (void)connectToServer{
     // 1.与服务器通过三次握手建立连接

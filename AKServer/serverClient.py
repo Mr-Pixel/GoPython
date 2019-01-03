@@ -11,7 +11,7 @@ server.listen(5)
 #print('Connecting by : %s ' % addr)
 while True:
     conn,addr = server.accept()
-    print(conn,addr)
+    print("链接成功：",addr)
     while True:
         data = conn.recv(1024).decode()
         print (data)
