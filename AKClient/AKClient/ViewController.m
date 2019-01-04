@@ -9,44 +9,54 @@
 #import "ViewController.h"
 #import "GCDAsyncSocket.h"
 
+UIButton* creatButton(NSString* title, CGRect frame, id target, SEL selector){
+    UIButton *sendBtn = [[UIButton alloc] initWithFrame:frame];
+    [sendBtn setTitle:title forState:UIControlStateNormal];
+    [sendBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    sendBtn.layer.borderWidth = 1;
+    sendBtn.layer.borderColor = [UIColor blackColor].CGColor;
+    sendBtn.layer.cornerRadius = 5;
+    [sendBtn addTarget:target action:selector forControlEvents:UIControlEventTouchUpInside];
+    return sendBtn;
+};
+
 @interface ViewController ()<GCDAsyncSocketDelegate>
 @property (strong,nonatomic) GCDAsyncSocket *socket;
+@property (strong,nonatomic) UITextView *textView;
+
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
     [self initView];
 }
 
 - (void)initView{
-    UIButton *connectBtn = [[UIButton alloc] initWithFrame:CGRectMake(20, 50, 100, 40)];
-    [connectBtn setTitle:@"Connect" forState:UIControlStateNormal];
-    [connectBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    connectBtn.layer.borderWidth = 1;
-    connectBtn.layer.borderColor = [UIColor blackColor].CGColor;
-    connectBtn.layer.cornerRadius = 5;
-    [connectBtn addTarget:self action:@selector(clickToConnect) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:connectBtn];
+    [self.view addSubview:creatButton(@"Connect", CGRectMake(20, 50, 100, 40), self, @selector(clickToConnect))];
+    [self.view addSubview:creatButton(@"Disconnect", CGRectMake(20, 120, 100, 40), self, @selector(clickToDisConnect))];
+    [self.view addSubview:creatButton(@"Send", CGRectMake(20, 180, 100, 40), self, @selector(clickToSendText))];
     
-    UIButton *sendBtn = [[UIButton alloc] initWithFrame:CGRectMake(CGRectGetMaxX(connectBtn.frame)+20, 50, 100, 40)];
-    [sendBtn setTitle:@"Send" forState:UIControlStateNormal];
-    [sendBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    sendBtn.layer.borderWidth = 1;
-    sendBtn.layer.borderColor = [UIColor blackColor].CGColor;
-    sendBtn.layer.cornerRadius = 5;
-    [sendBtn addTarget:self action:@selector(clickToSendText) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:sendBtn];
+    _textView = [[UITextView alloc] initWithFrame:CGRectMake(140, 50, self.view.bounds.size.width-160, 200)];
+    _textView.layer.borderWidth = 1;
+    _textView.layer.borderColor = [UIColor blackColor].CGColor;
+    _textView.layer.cornerRadius = 5;
+    _textView.backgroundColor = [UIColor lightTextColor];
+    _textView.text = @"Client Send Text:";
+    [self.view addSubview:_textView];
 }
 
 - (void)clickToConnect{
     [self connectToServer];
 }
 
+- (void)clickToDisConnect{
+    [_socket disconnect];
+}
+
 - (void)clickToSendText{
-    [_socket writeData:[@"ssss" dataUsingEncoding:NSUTF8StringEncoding] withTimeout:0 tag:0];
+    [_socket writeData:[_textView.text dataUsingEncoding:NSUTF8StringEncoding] withTimeout:0 tag:0];
 }
 
 #pragma socket
@@ -76,7 +86,7 @@
 - (void)socket:(GCDAsyncSocket *)sock
 didConnectToHost:(NSString *)host
           port:(uint16_t)port {
-    NSLog(@"===============%s",__func__);
+    NSLog(@"===============连接成功");
 }
 
 
@@ -95,7 +105,7 @@ didConnectToHost:(NSString *)host
 - (void)socket:(GCDAsyncSocket *)sock
 didWriteDataWithTag:(long)tag {
     
-    NSLog(@"===============%s",__func__);
+    NSLog(@"===============发送数据成功");
     
     //发送完数据手动读取，-1不设置超时
     [sock readDataWithTimeout:-1
@@ -110,7 +120,7 @@ didWriteDataWithTag:(long)tag {
     NSString *receiverStr = [[NSString alloc] initWithData:data
                                                   encoding:NSUTF8StringEncoding];
     
-    NSLog(@"===============%s %@",__func__,receiverStr);
+    NSLog(@"===============接收数据%@",receiverStr);
 }
 
 
