@@ -2,25 +2,25 @@
 # -*- coding: UTF-8 -*-
 # socket使用方法 https://blog.csdn.net/damotiansheng/article/details/44338411
 import socket
-import tkinter          # 导入 Tkinter 库
+from tkinter import *
 import threading
 
 # 创建 socket 对象
 server = socket.socket()        
 
 # UI
-window = tkinter.Tk()
-window.title('Socket Server')
-window.geometry('500x500')
-receivedStr = tkinter.StringVar()
+root = Tk()
+root.title('Socket Server')
+root.geometry('500x500')
+receivedStr = StringVar()
 receivedStr.set("sdfasdfasd")
 
 
 def setupUI():
-    tkinter.Message(window, text="Received Msg", textvariable=receivedStr, width=500, aspect=1).pack()
-    tkinter.Button(window, text="Start Server", command=startServer_newThread).pack()
-    tkinter.Button(window, text="stop Server", command=stopServer).pack()
-    window.mainloop()
+    Message(root, text="Received Msg", textvariable=receivedStr, width=500, aspect=1).pack()
+    Button(root, text="Start Server", command=startServer_newThread).pack()
+    Button(root, text="stop Server", command=stopServer).pack()
+    root.mainloop()
 
 def startServer_newThread():
     threading.Thread(target=startServer, args=()).start()
