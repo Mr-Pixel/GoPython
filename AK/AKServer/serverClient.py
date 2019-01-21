@@ -17,9 +17,9 @@ receivedStr.set("sdfasdfasd")
 
 
 def setupUI():
-    Message(root, text="Received Msg", textvariable=receivedStr, width=500, aspect=1).pack()
-    Button(root, text="Start Server", command=startServer_newThread).pack()
-    Button(root, text="stop Server", command=stopServer).pack()
+    Message(root, text="Received Msg", textvariable=receivedStr, width=500, aspect=1, bg = '#eee').pack()
+    Button(root, text="Start Server", command=startServer_newThread).pack(fill = BOTH, side = LEFT,ipadx = 20)
+    Button(root, text="Stop Server", command=stopServer).pack(fill = BOTH, side = LEFT,padx = 100)
     root.mainloop()
 
 def startServer_newThread():
